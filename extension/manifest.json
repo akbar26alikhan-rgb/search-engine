@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "DeepSeekr - AI Deep Search",
+  "version": "1.0.0",
+  "description": "Deep research and multi-source technical search directly from Brave and Chromium browsers.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "contextMenus",
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "DeepSeekr Search"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}

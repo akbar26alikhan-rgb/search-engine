@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DeepSeekr Search</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="header">
+    <div class="logo">
+      <span class="logo-icon">⚡</span>
+      <span class="logo-title">DeepSeekr</span>
+    </div>
+    <button id="btnSettings" class="icon-btn" title="Settings">⚙️</button>
+  </div>
+
+  <div id="settingsPanel" class="settings-panel hidden">
+    <label for="serverUrlInput">DeepSeekr Server URL:</label>
+    <div class="input-row">
+      <input type="text" id="serverUrlInput" placeholder="http://localhost:3000" />
+      <button id="btnSaveSettings" class="btn-sm">Save</button>
+    </div>
+    <div id="settingsStatus" class="settings-status"></div>
+  </div>
+
+  <div class="search-box">
+    <textarea id="queryInput" placeholder="Search technical topics, repos, papers..." rows="2"></textarea>
+    
+    <div class="context-actions">
+      <button id="btnGrabSelection" class="btn-chip" title="Fill with text currently selected on page">📋 Use Selection</button>
+      <button id="btnGrabPage" class="btn-chip" title="Fill with active page title">📄 Use Page</button>
+    </div>
+
+    <div class="action-buttons">
+      <button id="btnQuickSearch" class="btn btn-secondary">⚡ Quick Search</button>
+      <button id="btnDeepSearch" class="btn btn-primary">🔬 Deep Research</button>
+    </div>
+  </div>
+
+  <div id="statusContainer" class="status-container hidden">
+    <div class="spinner"></div>
+    <div id="statusText">Researching multi-angle sources...</div>
+  </div>
+
+  <div id="resultsContainer" class="results-container hidden">
+    <div class="results-header">
+      <span id="resultsCount">0 Results</span>
+      <button id="btnOpenWeb" class="link-btn">Open in Web App ↗</button>
+    </div>
+    <div id="resultsList" class="results-list"></div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

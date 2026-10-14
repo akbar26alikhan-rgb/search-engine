@@ -1,0 +1,6 @@
+{
+  "name": "DeepSeekr - AI Deep Search Engine",
+  "description": "Production-grade AI deep research search engine with multi-source discovery, intelligent query planning, source synthesis, and Brave browser integration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
